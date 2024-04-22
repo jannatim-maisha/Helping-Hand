@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313359701768",
+    "project_id": "shebakiller-bc468",
+    "storage_bucket": "shebakiller-bc468.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313359701768:android:a6c7d0c471c9cf4e447ebd",
+        "android_client_info": {
+          "package_name": "com.example.shebakiller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313359701768-05cnst0u5d2v2norlqhs6g8igo3cen70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG4u0eHS38uEMch3LUBhpibz6hzYFuhNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313359701768-05cnst0u5d2v2norlqhs6g8igo3cen70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

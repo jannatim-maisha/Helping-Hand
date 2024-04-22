@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ParcelDelivery">
+
+    <TextView
+        android:id="@+id/up_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Parcel Request"
+        android:textColor="@color/ColorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tg_DP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@color/ColorPrimaryLight"
+        android:drawableStart="@drawable/person_24"
+        android:drawablePadding="6dp"
+        android:hint="Name of The Reciever"
+        android:inputType="text"
+        android:paddingTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/up_header"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tg_SP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/ColorPrimaryLight"
+        android:drawableStart="@drawable/ic_baseline_call_24"
+        android:drawablePadding="6dp"
+        android:hint="Contact No."
+        android:inputType="text"
+        android:paddingTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tg_DP"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tg_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/ColorPrimaryLight"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="6dp"
+        android:hint="Pickup Location"
+        android:inputType="text"
+        android:paddingTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tg_SP"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tg_Dur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/ColorPrimaryLight"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="6dp"
+        android:hint="Dropoff Location"
+        android:inputType="text"
+        android:paddingTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tg_date"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tg_confirm"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/btmbtn"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tg_cancel"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tg_Dur" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tg_cancel"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/btmbtn"
+        android:text="Cancel"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tg_Dur" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

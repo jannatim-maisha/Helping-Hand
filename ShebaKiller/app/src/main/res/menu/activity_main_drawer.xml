@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="@color/black">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_baseline_message_24"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_baseline_beenhere_24"
+            android:title="Accept list" />
+        <item
+            android:id="@+id/nav_near_me"
+            android:icon="@drawable/ic_baseline_transfer_within_a_station_24"
+            android:title="Availale driver near me" />
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/ic_baseline_drive_eta_24"
+            android:title="Requested drivers" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_baseline_access_time_24"
+            android:title="Arrival time" />
+    </group>
+</menu>

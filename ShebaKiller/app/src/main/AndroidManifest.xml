@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shebakiller">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShebaKiller">
+        <activity
+            android:name=".ui.AcceptAndConnect"
+            android:exported="false" />
+        <activity
+            android:name=".TourGuide"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".ui.TourGuide"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".FindTutor"
+            android:exported="false" />
+        <activity
+            android:name=".ui.slideshow.NotificationAccept"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notificationPanel"
+            android:exported="false" />
+        <activity
+            android:name=".ParcelDelivery"
+            android:exported="false" />
+        <activity
+            android:name=".E_repair"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".rider_home"
+            android:exported="false"
+            android:label="@string/title_activity_rider_home"
+            android:theme="@style/Theme.ShebaKiller.NoActionBar" />
+        <activity
+            android:name=".blood_donation"
+            android:exported="false" />
+        <activity
+            android:name=".Nav_header"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

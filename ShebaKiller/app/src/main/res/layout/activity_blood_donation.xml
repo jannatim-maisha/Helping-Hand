@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76sp"
+        android:text="Select Blood Group"
+        android:textColor="@color/ColorAccent"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/bloodGroup2"
+        android:layout_width="200sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="148sp"
+        android:layout_marginEnd="4sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/ABpos"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/top_btn"
+            android:paddingLeft="20dp"
+            android:text="AB+"
+            android:textColor="@color/ColorPrimaryLight" />
+
+        <RadioButton
+            android:id="@+id/ABneg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/top_btn"
+            android:paddingLeft="20dp"
+            android:text="AB-"
+            android:textColor="@color/ColorPrimaryLight" />
+
+        <RadioButton
+            android:id="@+id/Opos"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/top_btn"
+            android:paddingLeft="20dp"
+            android:text="O+"
+            android:textColor="@color/ColorPrimaryLight" />
+
+        <RadioButton
+            android:id="@+id/Oneg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/top_btn"
+            android:paddingLeft="20dp"
+            android:text="O-"
+            android:textColor="@color/ColorPrimaryLight" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/bloodGroup"
+        android:layout_width="200sp"
+        android:layout_height="300sp"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="148sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/Apos"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/top_btn"
+            android:paddingLeft="20dp"
+            android:text="A+"
+            android:textColor="@color/ColorPrimaryLight" />
+
+        <RadioButton
+            android:id="@+id/Aneg"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/top_btn"
+            android:paddingLeft="20dp"
+            android:text="A-"
+            android:textColor="@color/ColorPrimaryLight" />
+
+        <RadioButton
+            android:id="@+id/Bpos"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/top_btn"
+            android:paddingLeft="20dp"
+            android:text="B+"
+            android:textColor="@color/ColorPrimaryLight" />
+
+        <RadioButton
+            android:id="@+id/tg_gt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/top_btn"
+            android:paddingLeft="20dp"
+            android:text="B-"
+            android:textColor="@color/ColorPrimaryLight" />
+
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/HospitalName"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginEnd="50sp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/ColorPrimaryLight"
+        android:drawableStart="@drawable/hospital_24"
+        android:drawablePadding="6sp"
+        android:hint="Hospital Name"
+        android:inputType="textEmailAddress"
+        android:paddingTop="10dp"
+        android:textColor="@color/darkGrey"
+        android:textColorHint="@color/darkGrey"
+        app:layout_constraintBottom_toTopOf="@+id/blood_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/blood_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56sp"
+        android:background="@drawable/btmbtn"
+        android:text="Send Request"
+        android:textColor="@color/darkGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
